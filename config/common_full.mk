@@ -17,4 +17,6 @@ PRODUCT_PACKAGES += \
 
 # Extra tools in CM
 PRODUCT_PACKAGES += \
-    vim
+    vim \
+    zip \
+    unrar
