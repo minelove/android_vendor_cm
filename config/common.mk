@@ -147,8 +147,9 @@ PRODUCT_PACKAGES += \
     DSPManager \
     libcyanogen-dsp \
     audio_effects.conf \
-    Apollo \
+    CMWallpapers \
     CMFileManager \
+    Eleven \
     LockClock \
     CMUpdater \
     CMAccount \
