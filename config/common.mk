@@ -134,7 +134,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     VoicePlus \
     Basic \
-    libemoji
+    libemoji \
+    Terminal
 
 # Custom CM packages
 PRODUCT_PACKAGES += \
@@ -203,21 +204,14 @@ PRODUCT_PACKAGES += \
 
 # These packages are excluded from user builds
 ifneq ($(TARGET_BUILD_VARIANT),user)
-
 PRODUCT_PACKAGES += \
     procmem \
     procrank \
-    Superuser \
     su
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.root_access=1
-else
+endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.root_access=0
-
-endif
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/common
 
@@ -295,7 +289,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
   ro.cm.version=$(CM_VERSION) \
   ro.cm.releasetype=$(CM_BUILDTYPE) \
   ro.modversion=$(CM_VERSION) \
-  ro.cmlegal.url=http://www.cyanogenmod.org/docs/privacy
+  ro.cmlegal.url=https://www.cyanogenmod.org/docs/privacy
 
 -include vendor/cm-priv/keys/keys.mk
 
