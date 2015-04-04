@@ -131,8 +131,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     VoicePlus \
     Basic \
-    libemoji \
-    Terminal
+    libemoji
 
 # Custom CM packages
 PRODUCT_PACKAGES += \
@@ -141,8 +140,7 @@ PRODUCT_PACKAGES += \
     AudioFX \
     CMFileManager \
     Eleven \
-    LockClock \
-    CyanogenSetupWizard
+    LockClock
 
 # CM Hardware Abstraction Framework
 PRODUCT_PACKAGES += \
