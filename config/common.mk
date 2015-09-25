@@ -144,7 +144,8 @@ PRODUCT_PACKAGES += \
     AudioFX \
     CMFileManager \
     Eleven \
-    LockClock
+    LockClock \
+    CMSettingsProvider
 
 # CM Platform Library
 PRODUCT_PACKAGES += \
